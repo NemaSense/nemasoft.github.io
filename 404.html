@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+</head>
+<body>
+<script>
+    // 1. Define the new base domain
+    var newDomain = "https://nemasense.com";
+
+    // 2. Capture the current path, query parameters, and hash
+    var path = window.location.pathname;
+    var queryString = window.location.search;
+    var hash = window.location.hash;
+
+    // 3. Redirect seamlessly replacing the current history state
+    window.location.replace(newDomain + path + queryString + hash);
+</script>
+
+<p>Redirecting... If you are not redirected automatically, <a href="https://nemasense.com/">click here</a>.</p>
+</body>
+</html>
